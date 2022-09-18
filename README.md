@@ -1,5 +1,5 @@
 # tutorial_online_shop
-
+# check packages. vue2 configs
 ## Project setup
 ```
 npm install
