@@ -43,7 +43,7 @@
 
 <script>
   import vPopup from '../popup/v-popup'
-  import toFix from '../../filters/toFix'
+  // import toFix from '../../filters/toFix'
 
   export default {
     name: "v-catalog-item",
@@ -63,10 +63,10 @@
         isInfoPopupVisible: false
       }
     },
-    filters: {
-      toFix,
-      formattedPrice
-    },
+    // filters: {
+    //   toFix,
+    //   formattedPrice
+    // },
     computed: {},
     methods: {
       productClick() {

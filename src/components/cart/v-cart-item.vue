@@ -19,8 +19,8 @@
 </template>
 
 <script>
-import toFix from '../../filters/toFix'
-import formattedPrice from "../../filters/price-format";
+// import toFix from '../../filters/toFix'
+// import formattedPrice from "../../filters/price-format";
 
 
   export default {
@@ -36,10 +36,10 @@ import formattedPrice from "../../filters/price-format";
     data() {
       return {}
     },
-    filters: {
-      toFix,
-      formattedPrice
-    },
+    // filters: {
+    //   toFix,
+    //   formattedPrice
+    // },
     computed: {},
     methods: {
       decrementItem() {

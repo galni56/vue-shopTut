@@ -22,8 +22,8 @@
 
 <script>
   import vCartItem from './v-cart-item'
-  import toFix from "../../filters/toFix";
-  import formattedPrice from "../../filters/price-format";
+  // import toFix from "../../filters/toFix";
+  // import formattedPrice from "../../filters/price-format";
   import {mapActions} from 'vuex'
 
   export default {
@@ -42,10 +42,10 @@
     data() {
       return {}
     },
-    filters: {
-      formattedPrice,
-      toFix
-    },
+    // filters: {
+    //   formattedPrice,
+    //   toFix
+    // },
     computed: {
       cartTotalCost() {
         let result = []

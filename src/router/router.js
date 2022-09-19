@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import vCatalog from '../components/catalog/v-catalog'
-import vCart from '../components/cart/v-cart'
+import vProducts from '../components/catalog/v-products'
 import vMainPage from '../components/main-page/v-main-page'
 import vProductPage from '../components/catalog/v-product-page'
 
@@ -26,11 +26,11 @@ let router = new Router({
       component: vProductPage
     },
     {
-      path: '/cart',
-      name: 'cart',
-      component: vCart,
+      path: '/filter',
+      name: 'products',
+      component: vProducts,
       props: true
-    }
+    },
   ]
 })
 
