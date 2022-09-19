@@ -3,7 +3,7 @@
     <h1>Online-shop</h1>
     <p>
       <router-link :to="{name: 'catalog'}">
-        to Catalog
+        TO CATALOG
       </router-link>
     </p>
   </div>
@@ -21,5 +21,22 @@
 </script>
 
 <style scoped>
-
+  a {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 25px;
+    border: 1px solid;
+    text-transform: uppercase;
+    background: #8d3e8d;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    transition: 0.4s;
+  }
+  a:hover {
+    transform: scale(1);
+    transition: 0.4s;
+  }
 </style>

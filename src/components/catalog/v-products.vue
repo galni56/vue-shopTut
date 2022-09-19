@@ -8,11 +8,15 @@
   <th>Name</th>
   <th>Store</th>
   <th>DeliveryDate</th>
+  <th>Company</th>
+  <th>CreatedDate</th>
   </tr>
 
   <tr v-for="product in filtereddata" :key="product.name" >
     <td>{{product.Name}}</td>
     <td>{{product.Store}}</td>
+    <td>{{product.Company}}</td>
+    <td>{{product.DeliveryDate}}</td>
     <td>{{new Date (product.DeliveryDate).toLocaleDateString()}}</td>
 
   </tr>
@@ -73,8 +77,8 @@
   .v-catalog-item {
     flex-basis: 25%;
     box-shadow: 0 0 8px 0 #e0e0e0;
-    padding: $padding*2;
-    margin-bottom: $margin*2;
+    padding: 16px;
+    margin-bottom: 16px;
 
     &__image {
       width: 100px;

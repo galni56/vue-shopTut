@@ -91,16 +91,16 @@
       bottom: 0;
       right: 0;
       left: 0;
-      padding: $padding*2 $padding*3;
+      padding: 16px 24px;
       display: flex;
       justify-content: center;
-      background: $green-bg;
+      background: #26ae68;
       color: #ffffff;
       font-size: 20px;
     }
 
     .total__name {
-      margin-right: $margin*2;
+      margin-right: 16px;
     }
   }
 </style>

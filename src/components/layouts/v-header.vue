@@ -3,7 +3,7 @@
     <router-link :to="{name: 'mainPage'}">
       <img src="../../assets/logo.png" alt="">
     </router-link>
-    <div class="search-field">
+    <div class="search-field" style="display:none">
       <input
           type="text"
           v-model="searchValue"
@@ -60,12 +60,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: $green-bg;
     padding: 16px;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
+    background: #8d3e8d;
+    padding: 20px;
 
     img {
       width: 50px;

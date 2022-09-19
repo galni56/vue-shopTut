@@ -10,22 +10,21 @@
     >
       <img class="v-catalog-item__image" :src=" require('../../assets/images/' + product_data.image) " alt="img">
       <div>
-        <p class="v-catalog-item__name">{{product_data.name}}</p>
+        <p class="v-catalog-item__name">Product: {{product_data.name}}</p>
         <p class="v-catalog-item__company">Company: {{product_data.Company}} </p>
-        <p class="v-catalog-item__store">{{product_data.category}}</p>
-        <p class="v-catalog-item__deliveryDate">{{product_data.category}}</p>
-        <p class="v-catalog-item__CreatedDate">{{product_data.category}}</p>
-
+        <p class="v-catalog-item__store">Store: {{product_data.Store}}</p>
+        <p class="v-catalog-item__deliveryDate">Deliver Date: {{product_data.DeliveryDate}}</p>
+        <p class="v-catalog-item__CreatedDate">Created Date: {{product_data.CreatedDate}}</p>
       </div>
     </v-popup>
 
 
     <img class="v-catalog-item__image" :src=" require('../../assets/images/' + product_data.image) " alt="img" @click="productClick">
-    <p class="v-catalog-item__name">{{product_data.name}}</p>
-    <p class="v-catalog-item__company">Company: {{product_data.Company}} </p>
-    <p class="v-catalog-item__store">{{product_data.category}}</p>
-    <p class="v-catalog-item__deliveryDate">{{product_data.category}}</p>
-    <p class="v-catalog-item__CreatedDate">{{product_data.category}}</p>
+      <p class="v-catalog-item__name">Product: {{product_data.name}}</p>
+      <p class="v-catalog-item__company">Company: {{product_data.Company}} </p>
+      <p class="v-catalog-item__store">Store: {{product_data.Store}}</p>
+      <p class="v-catalog-item__deliveryDate">Deliver Date: {{product_data.DeliveryDate}}</p>
+      <p class="v-catalog-item__CreatedDate">Created Date: {{product_data.CreatedDate}}</p>
     <button
         class="v-catalog-item__show-info"
         @click="showPopupInfo"
@@ -92,8 +91,8 @@
   .v-catalog-item {
     flex-basis: 25%;
     box-shadow: 0 0 8px 0 #e0e0e0;
-    padding: $padding*2;
-    margin-bottom: $margin*2;
+    padding: 16px;
+    margin-bottom: 16px;
 
     &__image {
       width: 100px;
